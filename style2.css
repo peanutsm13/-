@@ -1,0 +1,10 @@
+#inputSection {
+  display: flex;
+  justify-content: space-around;
+}
+
+#inputSection div {
+  /* flexアイテムの比率を決める。flexコンテナ内に余白があるとき余白部分をflexアイテムに指定した比率の分だけ追加する */
+  flex-grow: 1;
+  margin: 0 10px 10px 0;
+}
