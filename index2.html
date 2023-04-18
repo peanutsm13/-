@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyMoney SampleCode</title>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura-earthly.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="style2.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="home">MyMoney</h1>
+      <div class="navi">
+        <button onclick="window.location.hash = '#home'">ホーム</button>
+        <button onclick="window.location.hash = '#input'">入力</button>
+        <button onclick="window.location.hash = '#inOutList'">
+          入出金一覧
+        </button>
+        <button onclick="window.location.hash = '#graph'">グラフ</button>
+      </div>
+    </header>
+    <article>
+      <h2 id="input">入力</h2>
+      <section id="inputSection">
+        <div>
+          <label>収支</label>
+          <input
+            name="balance"
+            type="radio"
+            value="支出"
+            onclick="disableSelectBox(false)"
+            checked
+          />支出
+          <label>日付</label>
+          <label>カテゴリ</label>
+        </div>
+        <div>
+          <label>金額</label>
+          <label>メモ</label>
+        </div>
+      </section>
+      <h2 id="inOutList">入出金一覧</h2>
+      <h2 id="graph">グラフ</h2>
+    </article>
+  </body>
+</html>
