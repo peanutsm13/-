@@ -68,14 +68,28 @@
           <label>金額</label>
           <input type="number" id="amount" placeholder="金額を記入" />円
           <label>メモ</label>
-          <input type="text" placeholder="買ったものを記入" />
+          <input type="text" id="memo" placeholder="買ったものを記入" />
         </div>
       </section>
       <div class="submit">
         <button onclick="regist();">登録する</button>
       </div>
+
       <h2 id="inOutList">入出金一覧</h2>
+      <section id="list">
+        <!-- ここに入出金一覧を表示 -->
+        <script>
+          createList();
+        </script>
+      </section>
+
+      <!-- グラフ -->
       <h2 id="graph">グラフ</h2>
+      <section>
+        <!-- ここにグラフを表示します -->
+        <canvas id="pieChart"></canvas>
+      </section>
     </article>
+    <footer>&copy;MyMoney</footer>
   </body>
 </html>
